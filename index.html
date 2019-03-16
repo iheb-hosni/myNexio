@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script class="social-media" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<title>my nexio</title>
+	<style type="text/css">
+	body
+{
+ margin: 0;
+ padding: 0;
+  font-family: sans-serif;
+}
+		.dashboard-Header{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 10px;
+			
+		}
+		@media screen and (max-width: 700px) {
+			.dashboard-Header{
+    display: none;
+  }
+}
+		.logo{
+			background:url(mynexio.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 60px;
+ 			width: 150px;;
+		}
+		.home-menu{
+			/* border:1px solid 	; */
+			/* height: 673px; */
+		}
+		/* .home-right{
+			border:1px solid  red
+		} */
+		.home{
+ 			display: flex;
+			flex-direction: column;
+			background-color: #403E3E;
+			align-items: center;
+			list-style-type: none;
+
+		}
+		@media screen and (max-width: 700px) {
+			.home{
+    display: none;
+  }
+}
+
+		/* .home-left-menu{
+			height: 673px; */
+		
+		
+		img{
+			width: 50px;
+		}
+		span{
+			color: white;
+			margin:8px;
+		}
+		.profil{
+			 
+			display: flex;
+			flex-direction: column;
+			margin-top:100px;
+			justify-content: space-around;
+			height: 300px;
+			align-items: center
+		}
+		@media screen and (max-width: 700px) {
+			.profil{
+				
+    display: flex;
+	flex-direction: row;
+  };
+  
+}
+@media screen and (max-width:700px){
+	.btn:nth-child(4){
+	 
+	   display: none
+   }
+}
+		.btn-active{
+			height:34px;
+			background-color:#313541;
+			color:#fff;
+			font-size:16px;
+			Border-radius:30px;
+			width: 170px;
+			
+		}
+		.btn-active:hover{
+			color: white
+		}
+		.btn-default{
+			height:34px;
+			background-color:#e1e1e1;
+			color:#666;
+			font-size:16px;
+			Border-radius:30px;
+			width: 170px;
+			
+		}
+		.btn-default:hover{
+			
+			background: #313541;
+			color: #fff
+		}
+		.btn-md{
+			height:34px;
+			background-color:#c93256;
+			color:#fff;
+			font-size:16px;
+			Border-radius:30px
+		}
+		.btn-md:hover{
+			color: white
+		}
+		.profil-details{
+			/* border:1px solid; */
+			 
+			flex-direction: column;
+			 
+			height: 600px;
+			margin-top:50px;
+		}
+		@media screen and (min-width: 700px) {
+			.profil-details button{
+				/* border:1px solid red */
+    display: none;
+  }
+}
+		.profil-name{
+			font-size: 16px;
+			color:#376eb3;
+			text-align: center
+		}
+		.profil-mail{
+			height:34px;
+			background-color:#f8f8f8;
+			color:#000000;
+			font-size:16px;
+			Border-radius:30px
+		}
+		a{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			list-style: none;
+			list-style-type: none;
+			text-decoration: none !important;
+			color: white
+			
+		}
+		
+		ul.li{
+			text-decoration: none !important
+		}
+		.nexio-footer{
+			height: 200px;
+			/* border:1px solid; */
+			background:#514c4c
+			
+		}
+		@media screen and (max-width: 700px) {
+			.nexio-footer{
+    display: none;
+  }
+}
+		.smeg-intro{
+			/* border:2px solid red; */
+			display: flex;
+			margin-top:20px;
+			height: 177px;
+			justify-content: space-around
+		}
+		.smeg-info{
+			
+			width: 150px;
+			color: white;
+			font-size: 14px
+			
+		}
+		.smeg-info-detail{
+			 
+			display: flex;
+			justify-content: space-around;
+
+		}		 
+		.smeg-logo{
+			width: 70px;
+			height: 100px;
+		}
+		.smeg-menu {
+			/* border:1px solid ; */
+			list-style-type: none;
+			color: white !important;
+			font-size: 12px;
+			text-decoration: none !important;
+			width: 180px
+			
+		}
+		.smeg-menu li a{
+			text-decoration: none !important;
+		}
+		.smeg-menu li a:hover{
+			text-decoration: none !important;
+			color: white !important
+		}
+		.social-media{
+			height: 50px;
+			width: 40px;
+		}
+		.social-media-icon{
+			display: flex;
+			margin: 10px
+		}
+		.suivez-nous{
+			display: flex;
+			flex-direction: column;
+
+		}
+		.social-mediaTitle{
+			 text-align: right;
+			 font-size: 20px;
+		}
+		</style>
+</head>
+<body >
+<header class=" container dashboard-Header">
+<div class="logo">
+	<a href="#"></a>
+</div>
+<div class="admin-compte">
+	<p><i class="fas fa-user-circle"></i>
+	  Bonjour Dominique  <br>
+	  votre compte <i class="fas fa-angle-down"></i>
+	</p>
+</div>
+	
+</header>
+<main>
+	<section class=" container home-menu">
+		  <div class="row home-left-menu ">
+				<ul class=" home col-lg-2 col-md-6 col-sm-12">
+					<li><a href="#"><img class="social-media" src="home.png">
+				<span>dashboard</span></a></li>	
+				<li><a href="#"><img class="social-media" src="facture.png">
+				<span>facture&paiments</span></a></li>
+				<li><a><img class="social-media" src="icon.png">
+				<span>consommation</span></a>
+			</li>
+				<li><a href="#"><img class="social-media" src="usage.jpg">
+				<span>usage</span></a></li>
+			</li>
+				<li><a href="#"><img class="social-media" src="guide.png">
+				<span>guide</span></a>
+			</li>
+				<li><a href="#"><img class="social-media" src="sound.png">
+				<span>simlateur tarif</span></a>
+			</li>
+				<li><a href="#"><img class="social-media" src="meteo.png">
+				<span>bilan meteo</span></a>
+			</li>
+				<li><a href="#"><img class="social-media" src="contact.png">
+				<span>contact</span></a>
+			</li>
+				</ul>	
+				<div class="home-right col-lg-10 col-md-6 col-sm-12">
+						<div class="profil col-lg-4 col-md-6 col-sm-12">
+								<button class="btn  btn-active  btn-sm">Mon profil</button>
+								<button class="btn  btn-default btn-sm">Contrats</button>
+								<button class="btn  btn-default btn-sm">Confidentialité </button>
+								<button class="btn  btn-default btn-sm">Me Déconnecter</button>
+						</div>
+						<div class="profil-details col-lg-8 col-md-6 col-sm-12">
+							<h1 class="profil-name">Mon Profil</h1>
+							<h2 class="profil-nameUser">Nom:Dominique Wilkins</h2>
+							<h3 class="profil-password">Mon mot de passe</h3>
+							<button class="btn   btn-md">
+								Modifier votre mot de passe
+							</button>
+							<div class="form-group">
+									<label for="usr">Adress e-mail:</label>
+									<input type="text" class="form-control profil-mail" placeholder="dominique.Wilkins@gmail.com" id="usr">
+								  </div>
+						  	 <div class="form-group">
+										<label for="usr">mobile:</label>
+										<input type="text" class="form-control profil-mail" placeholder="06 67 71 82 93" id="usr">
+									  </div>
+							<div class="form-group">
+								<input type="checkbox"> je souhaite m'abonner a la newsletter
+							</div>
+							<button class="btn  btn-default btn-sm">Me Déconnecter</button>
+						</div>
+				</div>
+						
+		  </div>				
+	</section>
+
+</main>
+<footer class="container nexio-footer">
+ <div class="row">
+ <div class="col-lg-4 col-md-6 col-sm-12 smeg-intro">
+      <div class="col-lg-10 col-md-6 col-sm-12 smeg-info-detail">
+	<img  class="smeg-logo"class="social-media" src="smeg.png" alt="smeg logo">
+	
+	<p class="smeg-info">Société Monégasque de l'electricité et du gaz 10,Avenue de Fontvielle
+		98000 Monaco <br/>
+		<span class="smeg-number">+377 92 05 05 00</span>
+	</p>
+</div>	
+ </div>
+ <div class="col-lg-4 col-md-6 col-sm-12 smeg-intro">
+    <ul class="smeg-menu">
+		<li><a href="#">dashboard</a></li>
+		<li><a href="#">factures</a></li>
+		<li><a href="#">consommation</a></li>
+		<li><a href="#">Smart Home</a></li>
+		<li><a href="#">EcoTroks</a></li>
+		<li><a href="#">Guide</a></li>
+		<li><a href="#">Simlateur Tarifs</a></li>
+		<li><a href="#">Bilan météo</a></li>
+		<li><a href="#">Actualité</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 smeg-intro">
+	<div class="suivez-nous">
+	<span class="social-mediaTitle">Suivez Nous</span><br/>
+	<ul class="social-media-icon">
+		<i><a href="#"><img  class="social-media" src="facebook.png"></a></i>
+		<i><a href="#"><img class="social-media" src="instagram.png"></a></i>
+		<i><a href="#"><img class="social-media" src="linkedin.png"></a></i>
+		<i><a href="#"><img class="social-media" src="twitter.png"></a></i>
+</ul>
+</div>
+	</div>
+	
+ </div> 
+
+</footer>
+
+</body>
+</html>
